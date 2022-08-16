@@ -17,7 +17,7 @@ public struct YearMonthDay {
     let month: Int
     let day: Int
     
-    init(year: Int, month: Int, day: Int) throws {
+    public init(year: Int, month: Int, day: Int) throws {
         
         let dateComponents = DateComponents(calendar: .init(identifier: .gregorian), year: year, month: month, day: day)
         guard dateComponents.isValidDate else {

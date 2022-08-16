@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct FortuneTeller {
+public struct FortuneTeller {
     
-    static func fortuneForYou(name: Name, birthday: YearMonthDay, bloodType: BloodType, today: YearMonthDay) -> Result {
+    public static func fortuneForYou(name: Name, birthday: YearMonthDay, bloodType: BloodType, today: YearMonthDay) -> Result {
         
         let hash = "\(name), \(birthday), \(bloodType), \(today)".hash
         let result = Result(index: hash)

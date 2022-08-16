@@ -9,13 +9,13 @@ import Foundation
 
 public struct Name {
     
-    enum Error: Swift.Error {
+    public enum Error: Swift.Error {
         case tooLong
     }
     
     let text: String
     
-    init(text: String) throws {
+    public init(text: String) throws {
         guard text.count <= Int(Int8.max) else {
             throw Error.tooLong
         }
