@@ -16,7 +16,7 @@ public struct Name {
     let text: String
     
     init(text: String) throws {
-        guard text.count <= 129 else {
+        guard text.count <= Int(Int8.max) else {
             throw Error.tooLong
         }
         self.text = text
