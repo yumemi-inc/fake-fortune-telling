@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Name {
+public struct Name: Decodable {
     
     public enum Error: Swift.Error {
         case tooLong
