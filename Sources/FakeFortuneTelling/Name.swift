@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Name: Decodable {
+public struct Name {
     
     public enum Error: Swift.Error {
         case tooLong
@@ -19,6 +19,16 @@ public struct Name: Decodable {
         guard text.count <= Int(Int8.max) else {
             throw Error.tooLong
         }
+        self.text = text
+    }
+    
+}
+
+extension Name: Decodable {
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let text = try container.decode(String.self)
         self.text = text
     }
     
