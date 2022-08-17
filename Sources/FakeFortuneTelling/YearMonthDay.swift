@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct YearMonthDay {
+public struct YearMonthDay: Decodable {
     
     public enum Error: Swift.Error {
         case invalidDate
