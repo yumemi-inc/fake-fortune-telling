@@ -270,7 +270,7 @@ private extension Array {
 
 extension Result {
     
-    init(index: Int) {
+    public init(index: Int) {
         self.overall = overallForcasts.modded(by: index, seed: 1)
         self.love = loveForcasts.modded(by: index, seed: 2)
         self.work = workForcasts.modded(by: index, seed: 3)
