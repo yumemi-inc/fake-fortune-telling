@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum BloodType: Decodable {
+public enum BloodType: String, Decodable {
     
     case o
     case a
