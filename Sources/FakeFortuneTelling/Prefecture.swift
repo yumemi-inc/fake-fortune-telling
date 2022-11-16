@@ -9,14 +9,15 @@ import Foundation
 
 public enum Prefecture: CaseIterable, Encodable {
     
-    case hokkai
+    // spell: https://so-zou.jp/web-app/tech/data/code/japanese-prefecture.htm
+    case hokkaido
     case aomori, iwate, miyagi, akita, yamagata, fukushima
-    case ibaragi, tochigi, gunma, saitama, chiba, tokyo, kanagawa
+    case ibaraki, tochigi, gunma, saitama, chiba, tokyo, kanagawa
     case niigata, toyama, ishikawa, fukui, yamanashi, nagano, gifu, shizuoka, aichi
-    case mie, shiga, kyoto, osaka, hyougo, nara, wakayama
+    case mie, shiga, kyoto, osaka, hyogo, nara, wakayama
     case tottori, shimane, okayama, hiroshima, yamaguchi
-    case tokushima, kagawa, ehime, kouchi
-    case fukuoka, saga, nagasaki, kumamoto, ooita, miyazaki, kagoshima, okinawa
+    case tokushima, kagawa, ehime, kochi
+    case fukuoka, saga, nagasaki, kumamoto, oita, miyazaki, kagoshima, okinawa
     
 }
 
@@ -25,7 +26,7 @@ extension Prefecture {
     var name: String {
         
         switch self {
-        case .hokkai:
+        case .hokkaido:
             return "北海道"
             
         case .aomori:
@@ -46,7 +47,7 @@ extension Prefecture {
         case .fukushima:
             return "福島"
             
-        case .ibaragi:
+        case .ibaraki:
             return "茨城"
             
         case .tochigi:
@@ -106,7 +107,7 @@ extension Prefecture {
         case .osaka:
             return "大阪"
             
-        case .hyougo:
+        case .hyogo:
             return "兵庫"
             
         case .nara:
@@ -139,7 +140,7 @@ extension Prefecture {
         case .ehime:
             return "愛媛"
             
-        case .kouchi:
+        case .kochi:
             return "高知"
             
         case .fukuoka:
@@ -154,7 +155,7 @@ extension Prefecture {
         case .kumamoto:
             return "熊本"
             
-        case .ooita:
+        case .oita:
             return "大分"
             
         case .miyazaki:
