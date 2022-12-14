@@ -12,7 +12,7 @@ extension Array {
     subscript(moddingWith mod: Index) -> Element {
         precondition(count > 0)
         let index = mod % count
-        return self[index]
+        return self[abs(index)]
     }
     
 }
