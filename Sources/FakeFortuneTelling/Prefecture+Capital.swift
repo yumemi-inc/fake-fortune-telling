@@ -9,7 +9,7 @@ import Foundation
 
 extension Prefecture {
     
-    var capital: String {
+    public var capital: String {
         switch self {
         case .hokkaido:
             return "札幌市"
