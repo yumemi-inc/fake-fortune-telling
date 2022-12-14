@@ -30,142 +30,142 @@ extension Prefecture {
             return "北海道"
             
         case .aomori:
-            return "青森"
+            return "青森県"
             
         case .iwate:
-            return "岩手"
+            return "岩手県"
             
         case .miyagi:
-            return "宮城"
+            return "宮城県"
             
         case .akita:
-            return "秋田"
+            return "秋田県"
             
         case .yamagata:
-            return "山形"
+            return "山形県"
             
         case .fukushima:
-            return "福島"
+            return "福島県"
             
         case .ibaraki:
-            return "茨城"
+            return "茨城県"
             
         case .tochigi:
-            return "栃木"
+            return "栃木県"
             
         case .gunma:
-            return "群馬"
+            return "群馬県"
             
         case .saitama:
-            return "埼玉"
+            return "埼玉県"
             
         case .chiba:
-            return "千葉"
+            return "千葉県"
             
         case .tokyo:
-            return "東京"
+            return "東京都"
             
         case .kanagawa:
-            return "神奈川"
+            return "神奈川県"
             
         case .niigata:
-            return "新潟"
+            return "新潟県"
             
         case .toyama:
-            return "富山"
+            return "富山県"
             
         case .ishikawa:
-            return "石川"
+            return "石川県"
             
         case .fukui:
-            return "福井"
+            return "福井県"
             
         case .yamanashi:
-            return "山梨"
+            return "山梨県"
             
         case .nagano:
-            return "長野"
+            return "長野県"
             
         case .gifu:
-            return "岐阜"
+            return "岐阜県"
             
         case .shizuoka:
-            return "静岡"
+            return "静岡県"
             
         case .aichi:
-            return "愛知"
+            return "愛知県"
             
         case .mie:
-            return "三重"
+            return "三重県"
             
         case .shiga:
-            return "滋賀"
+            return "滋賀県"
             
         case .kyoto:
-            return "京都"
+            return "京都府"
             
         case .osaka:
-            return "大阪"
+            return "大阪府"
             
         case .hyogo:
-            return "兵庫"
+            return "兵庫県"
             
         case .nara:
-            return "奈良"
+            return "奈良県"
             
         case .wakayama:
-            return "和歌山"
+            return "和歌山県"
             
         case .tottori:
-            return "鳥取"
+            return "鳥取県"
             
         case .shimane:
-            return "島根"
+            return "島根県"
             
         case .okayama:
-            return "岡山"
+            return "岡山県"
             
         case .hiroshima:
-            return "広島"
+            return "広島県"
             
         case .yamaguchi:
-            return "山口"
+            return "山口県"
             
         case .tokushima:
-            return "徳島"
+            return "徳島県"
             
         case .kagawa:
-            return "香川"
+            return "香川県"
             
         case .ehime:
-            return "愛媛"
+            return "愛媛県"
             
         case .kochi:
-            return "高知"
+            return "高知県"
             
         case .fukuoka:
-            return "福岡"
+            return "福岡県"
             
         case .saga:
-            return "佐賀"
+            return "佐賀県"
             
         case .nagasaki:
-            return "長崎"
+            return "長崎県"
             
         case .kumamoto:
-            return "熊本"
+            return "熊本県"
             
         case .oita:
-            return "大分"
+            return "大分県"
             
         case .miyazaki:
-            return "宮崎"
+            return "宮崎県"
             
         case .kagoshima:
-            return "鹿児島"
+            return "鹿児島県"
             
         case .okinawa:
-            return "沖縄"
+            return "沖縄県"
         }
         
     }
