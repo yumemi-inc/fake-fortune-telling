@@ -9,10 +9,10 @@ import Foundation
 
 public struct FortuneTeller {
     
-    public static func fortuneForYou(name: Name, birthday: YearMonthDay, bloodType: BloodType, today: YearMonthDay) -> Result {
+    public static func prefectureForYou(name: Name, birthday: YearMonthDay, bloodType: BloodType, today: YearMonthDay) -> Prefecture {
         
         let hash = "\(name), \(birthday), \(bloodType), \(today)".hash
-        let result = Result(index: hash)
+        let result = Prefecture.allCases[moddingWith: hash]
         
         return result
         
