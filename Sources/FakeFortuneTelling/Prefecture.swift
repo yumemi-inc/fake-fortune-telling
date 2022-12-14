@@ -23,7 +23,7 @@ public enum Prefecture: CaseIterable, Encodable {
 
 extension Prefecture {
     
-    var name: String {
+    public var name: String {
         
         switch self {
         case .hokkaido:

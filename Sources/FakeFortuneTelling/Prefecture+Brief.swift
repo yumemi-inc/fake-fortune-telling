@@ -9,7 +9,7 @@ import Foundation
 
 extension Prefecture {
     
-    var brief: String {
+    public var brief: String {
         switch self {
         case .hokkaido:
             return """
