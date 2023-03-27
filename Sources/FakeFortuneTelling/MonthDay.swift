@@ -13,8 +13,8 @@ public struct MonthDay: Encodable {
         case invalidDate
     }
     
-    let month: Int
-    let day: Int
+    public let month: Int
+    public let day: Int
     
     public init(month: Int, day: Int) throws {
         
