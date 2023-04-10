@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct YearMonthDay: Decodable {
+public struct YearMonthDay {
     
     public enum Error: Swift.Error {
         case invalidDate
@@ -27,6 +27,25 @@ public struct YearMonthDay: Decodable {
         self.year = year
         self.month = month
         self.day = day
+        
+    }
+    
+}
+
+extension YearMonthDay: Decodable {
+    
+    private enum CodingKeys: CodingKey {
+        case year, month, day
+    }
+    
+    public init(from decoder: Decoder) throws {
+        
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let year = try container.decode(Int.self, forKey: .year)
+        let month = try container.decode(Int.self, forKey: .month)
+        let day = try container.decode(Int.self, forKey: .day)
+        
+        try self.init(year: year, month: month, day: day)
         
     }
     
