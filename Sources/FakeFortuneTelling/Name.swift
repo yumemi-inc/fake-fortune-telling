@@ -29,7 +29,7 @@ extension Name: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         let text = try container.decode(String.self)
-        self.text = text
+        try self.init(text: text)
     }
     
 }
