@@ -10,12 +10,16 @@ import Foundation
 public struct Name {
     
     public enum Error: Swift.Error {
+        case empty
         case tooLong
     }
     
     let text: String
     
     public init(text: String) throws {
+        guard !text.isEmpty else {
+            throw Error.empty
+        }
         guard text.count <= Int(Int8.max) else {
             throw Error.tooLong
         }
